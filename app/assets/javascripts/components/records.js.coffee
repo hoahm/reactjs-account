@@ -8,8 +8,10 @@
     records: []
 
   addRecord: (record) ->
-    records = @state.records.slice()
-    records.push record
+    # records = @state.records.slice()
+    # records.push record
+    # The same result to:
+    records = React.addons.update(@state.records, { $push: [record] })
     @setState records: records
 
   deleteRecord: (record) ->
