@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Accounts
+    meta name="keywords" content="accounts"
+    meta name="author" content="hoahm"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"
+    link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,700" rel="stylesheet" type="text/css"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'modernizr', 'data-turbolinks-track' => true
+    = javascript_include_tag  'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    = yield
