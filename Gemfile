@@ -102,3 +102,5 @@ gem 'has_scope'
 # Paginator
 gem 'kaminari-bootstrap', '~> 3.0.1'
 
+# Reactjs
+gem 'react-rails', '~> 1.0'
